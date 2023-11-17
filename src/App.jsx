@@ -1,4 +1,4 @@
-import { PalyerInfo } from "./spotify/components/PalyerInfo";
+import { PlayerInfo } from "./spotify/components/PlayerInfo";
 import { Player } from "./spotify/components/Player";
 import { Nav } from "./spotify/layouts/Nav";
 import { Home } from "./spotify/pages/Home";
@@ -13,7 +13,7 @@ export const App = () => {
         <Home />
       </main>
       <aside className="bg-zinc-900 rounded-lg ">
-        <PalyerInfo />
+        <PlayerInfo />
       </aside>
       <footer className="px-3">
         <Player />
