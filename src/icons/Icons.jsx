@@ -83,6 +83,26 @@ export const IconXmark = () => {
     </svg>
   );
 };
+
+export const IconDown = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 48 48"
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="4"
+        d="M36 18L24 30L12 18"
+      />
+    </svg>
+  );
+};
 export const IconLibrary = () => {
   return (
     <svg
