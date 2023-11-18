@@ -103,6 +103,47 @@ export const IconDown = () => {
     </svg>
   );
 };
+
+export const IconUpload = ()=>{
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 14 14"
+    >
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="m4 7l3-3.5L10 7M7 3.5v7" />
+        <circle cx="7" cy="7" r="6.5" />
+      </g>
+    </svg>
+  );
+}
+export const IconDownload = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 14 14"
+    >
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="m4 7l3 3.5L10 7m-3 3.5v-7" />
+        <circle cx="7" cy="7" r="6.5" />
+      </g>
+    </svg>
+  );
+};
 export const IconLibrary = () => {
   return (
     <svg

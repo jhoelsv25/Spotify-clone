@@ -21,7 +21,7 @@ export const Nav = () => {
             <span className="text-3xl">
               <IconSearch />
             </span>
-            <Link to="/">Search</Link>
+            <Link to="/search">Search</Link>
           </li>
         </ul>
       </nav>
