@@ -1,3 +1,4 @@
+import { Routing } from "../../Routing";
 import { CardSong } from "../components/cards/CardSong";
 import { ListSong } from "../components/cards/ListSong";
 import { Header } from "../layouts/Header";
@@ -19,8 +20,8 @@ export const Home = () => {
         <header className="py-5">
           <Greeting />
         </header>
-        <article className="flex flex-wrap">
-          <ListSong />
+        <article className="flex flex-wrap gap-5">
+          <Routing />
         </article>
       </article>
     </section>

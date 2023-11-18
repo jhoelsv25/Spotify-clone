@@ -1,18 +1,23 @@
-import { IconPlay, IconVolume } from "../../icons/Icons";
+import { IconPause, IconPlay, IconVolume } from "../../icons/Icons";
+import { usePlayer } from "../hooks/usePlayer";
 import { CardSong } from "./cards/CardSong";
 
 export const Controls = () => {
+  const { isPlaying, setIsPlaying } = usePlayer();
   return (
     <>
       <CardSong />
       <div className="flex flex-col items-center justify-center gap-3">
-        <button className="bg-white text-black text-xl rounded-full p-2 w-10 h-10 flex items-center justify-center ">
-          <IconPlay />
+        <button
+          onClick={() => setIsPlaying(!isPlaying)}
+          className="bg-white text-black text-xl rounded-full p-2 w-10 h-10 flex items-center justify-center "
+        >
+          {isPlaying ? <IconPlay /> : <IconPause />}
         </button>
         <div className="flex gap-3 items-center">
           <small className="text-gray-400 font-extralightlight">0:00</small>
           <input
-            class="rounded-lg overflow-hidden appearance-none bg-gray-400 h-1 w-60 cursor-pointer"
+            className="rounded-lg overflow-hidden appearance-none bg-gray-400 h-1 w-60 cursor-pointer"
             type="range"
             min="1"
             max="100"
@@ -27,7 +32,7 @@ export const Controls = () => {
         </button>
 
         <input
-          class="rounded-lg overflow-hidden appearance-none bg-gray-400 h-1 w-32 cursor-pointer"
+          className="rounded-lg overflow-hidden appearance-none bg-gray-400 h-1 w-32 cursor-pointer"
           type="range"
           min="1"
           max="100"

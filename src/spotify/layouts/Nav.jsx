@@ -31,13 +31,13 @@ export const Nav = () => {
             <span className="text-3xl">
               <IconLibrary />
             </span>
-            <Link to="/">Your Library</Link>
+            <Link to="/library">Your Library</Link>
           </li>
           <li className="flex items-center gap-3 text-base  text-gray-400 hover:text-gray-200 font-bold">
             <span className="text-3xl">
               <IconHeart />
             </span>
-            <Link to="/">Favorites</Link>
+            <Link to="/favorite">Favorites</Link>
           </li>
         </ul>
         <hr className="mx-4" />
